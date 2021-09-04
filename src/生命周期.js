@@ -40,9 +40,19 @@ class Demo extends React.Component {
     console.log('render')
     return (
       <div>
-        
+        <input type="text" />
+        <span>
+          it is {this.state.date.toLocaleTimeString()} now!
+          <input type="text" />
+        </span>
       </div>
     )
+  }
+
+  add = () => {
+    this.setState({
+      number: this.state.number + 1
+    })
   }
 }
 
