@@ -20,7 +20,7 @@ class Demo extends React.Component {
       this.setState({
         date: new Date()
       })
-    },1000)
+    }, 1000)
   }
 
   componentWillUnmount() {
@@ -31,22 +31,22 @@ class Demo extends React.Component {
     console.log('did update')
   }
 
-  shouldComponentUpdate(){
+  shouldComponentUpdate() {
     console.log('should update')
     return true
-  }  
+  }
 
   render() {
     console.log('render')
     return (
-      <div>
-        
+      <div >
+        my name is wby
       </div>
     )
   }
 }
 
-ReactDOM.render(
-  <Demo />,
+ReactDOM.render(<
+  Demo />,
   document.getElementById('root')
 )
